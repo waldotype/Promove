@@ -1,0 +1,17 @@
+.flota{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+#fondo{
+    background-image: url(Assets\img\demo2.png);
+}
+
+h3{
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    text-align: center;
+
+}
