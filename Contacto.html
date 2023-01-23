@@ -1,80 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Document</title>
+    <link rel="stylesheet" href="css/contacto.css">
 </head>
-<body style="background-color: rgb(14, 97, 79)">
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #b7cbda;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="Imagenes/LOGO.jpg" alt="Logo" width="40" height="30"
+            class="d-inline-block align-text-top">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="flota.html">Flota</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="tags">
+            <button class="btn btn-outline-success" type="button">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <body style="background-color: hsl(231, 10%, 57%)">
 
 
-    <H1> <strong>Reserva tu asiento con anticipacion</strong> </H1>
+    <H1 class="maintitle"> <strong>Reserva tu asiento con anticipacion</strong> </H1>
 
-    <button>Agenta tu viaje al 56984928017</button>
-    
-     <!-- formulario de contacto en html y css -->  
+    <P class="contacto">Agenta tu viaje al 56984928017</P>
 
-	<div class="contact_form">
+    <!-- formulario de contacto en html y css -->
+<div class="row">
+    <div class="col"></div>
+    <div class="col">
+        <div class="mb-3">
+            <h1 id="titfor">Formulario de contacto</h1>
+            <h3 id="slogan">No te quedes abajo, escribenos!</h3>
+            <label for="exampleFormControlInput1" class="form-label">Tu Nombre</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+            <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <input class="form-control" type="text" placeholder="Tu telefono" aria-label="default input example">
+            <label for="exampleFormControlTextarea1" class="form-label">Tu mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <a href="#" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true" onclick="contacto()">Enviar</a>
 
-		<div class="formulario">			
-      <h1>Formulario de contacto</h1>
-				<h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+    </div>
+    <div class="col"></div>
+</div>
 
-
-<form action="submeter-formulario.php" method="post">				
-
-						
-<p>
-<label for="nombre" class="colocar_nombre">Nombre
-<span class="obligatorio">*</span>
-</label>
-<input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-</p>
-							
-<p>
-<label for="email" class="colocar_email">Email
-<span class="obligatorio">*</span>
-</label>
-<input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-</p>
-						
-<p>
-<label for="telefone" class="colocar_telefono">Teléfono
-</label>
-<input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-</p>		
-							
-			
-<p>
-<label for="asunto" class="colocar_asunto">Asunto
-<span class="obligatorio">*</span>
-</label>
-<input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-</p>		
-							
-<p>
-<label for="mensaje" class="colocar_mensaje">Mensaje
-<span class="obligatorio">*</span>
-</label>                     
-<textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-</p>	  								
-							
-<button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
-
-<p class="aviso">
-<span class="obligatorio"> * </span>los campos son obligatorios.
-</p>					
-						
-</form>
-	</div>	
-	</div>
 
 </body>
+
 </html>
+<!--  js de boostrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-
-
+<script src="./js/main.js"></script>
+<!-- Pluging sweetalert -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 
 </html>

@@ -4,8 +4,14 @@
     border-radius: 50%;
 }
 
-#fondo{
-    background-image: url(Assets\img\demo2.png);
+.cont-titulo{
+    display: flex;
+    align-content: center;
+}
+
+#fotologo{
+    width: 5rem;
+    height: 5rem;
 }
 
 h3{

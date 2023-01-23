@@ -5,44 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <title>Flota</title>   
+    <!-- mportacion de css -->
+    <title>Promove: Flota</title>
+    <link rel="stylesheet" href="css/flota.css">
+    <link rel="shortcut icon" href="Imagenes/logoPromove.png" type="image/x-icon">   
 </head>
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #b7cbda;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="Imagenes/LOGO.jpg" alt="Logo" width="40" height="30"
+          class="d-inline-block align-text-top">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="flota.html">Flota</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="tags">
+          <button class="btn btn-outline-success" type="button">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
 <body style="background-color: hsl(231, 10%, 57%)">
-   <h2><strong>LA FLOTA QUE TE MUEVE</strong></h2> 
-
+</div>
+<div class="row">
+  <div class="col-2"></div>
+  <div class="col-8">
+    <div class="cont-titulo">
+      <img src="Imagenes/logoPromove.png" id="fotologo">
+      <h1><strong>LA FLOTA QUE TE MUEVE</strong></h1>
+    </div>
+    
+   <div class="col-2"></div>
+  </div>
+</div>
+<div class="row">
+   <div class="col"></div>
+  </div>
     <div class="container marketing" id="fondo">
 
         <div class="row">
           <div class="col">
-            <img src="Imagenes/LOGO.jpg"width="30" height="30"> 
+             
            <h2>Aca puedes ver los buses que te llevaran a los mejores recitales</h2> 
             <div class="container marketing" id="fondo">
         
                 <div class="row">
-                  <div class="col">
-                    <img src="Imagenes\bus 1.jpg" class="flota" width="300" height="200"
+                  <div class="col-4">
+                    <img src="Imagenes\bus 1.jpg" class="flota" width="400" height="300" >
                    <p>Bus capacidad para 42 personas</p>
                     <p><a class="btn btn-secondary" href="#">Subete »</a></p>
                   </div>
-                  <div class="col">
-                    <img src="Imagenes/bus 2.webp" class="flota"width="300" height="200"
+                  <div class="col-4">
+                    <img src="Imagenes/bus 2.webp" class="flota"width="600" height="500">
                    <p>Bus capacidad para 60 personas</p>
                     <p><a class="btn btn-secondary" href="#">Subete »</a></p>
                   </div>
-                  <div class="col">
-                    <img src="Imagenes/bus 3.jpg" class="flota"width="300" height="200" 
+                  <div class="col-4">
+                    <img src="Imagenes/bus 3.jpg" class="flota"width="600" height="500" >
                     <p>Bus capacidad para 30 personas</p>
                     <p><a class="btn btn-secondary" href="#">Subete»</a></p>
                   </div>
-                  <div class="col">
-                    <img src="Imagenes/bus 4.jpg" class="flota"width="300" height="200"
+                  <div class="col-4">
+                    <img src="Imagenes/bus 4.jpg" class="flota"width="600" height="500">
                     <p>Bus capacidad para 40 personas</p>
+                    <p><a class="btn btn-secondary" href="#">Subete »</a></p>
+                  </div>
+                  <div class="col-4">
+                    <img src="Imagenes/vanford.jpg" class="flota"width="600" height="500">
+                    <p>Van capacidad para 15 personas</p>
+                    <p><a class="btn btn-secondary" href="#">Subete »</a></p>
+                  </div>
+                  <div class="col-4">
+                    <img src="Imagenes/van 2.jpg" class="flota"width="600" height="500">
+                    <p>Van capacidad para 12 personas</p>
                     <p><a class="btn btn-secondary" href="#">Subete »</a></p>
                   </div>
                 </div>
                 
-                  <button>TE SUBISTE?</button>
-   
-              
+                <div class="row">
+                  <div class="col"></div>
+                  <div class="col">    
+                  <button  onclick="infocont()">TE SUBISTE?</button>
+                  <div class="col"></div>
+                </div>
+                 <div class="col"></div>
+                </div>
+
+      <!-- Pluging sweetalert -->
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <!--  js de boostrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>    
 </body>
 </html>
